@@ -7,7 +7,7 @@ func checkPossibility(nums []int) bool {
 
 	diffCount := 0
 
-	for i, _ := range nums[:len(nums)-1] {
+	for i := range nums[:len(nums)-1] {
 		if nums[len(nums)-i-2] > nums[len(nums)-i-1] {
 			diffCount++
 
